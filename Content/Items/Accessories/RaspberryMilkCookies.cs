@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using ClickerClass;
 using ClickerClass.Items;
 using ClickerClass.Items.Accessories;
 using SOTSClickers.Common.Utilities;
@@ -12,7 +10,8 @@ namespace SOTSClickers.Content.Items.Accessories
 {
     public class RaspberryMilkCookies : ClickerItem
     {
-    //    public override bool IsLoadingEnabled(Mod mod) => false;
+        //    public override bool IsLoadingEnabled(Mod mod) => false;
+        public override string Texture => $"SOTSClickers/Assets/Textures/Content/Items/Accessories/{Name}";
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Milk.DamageIncrease, ChocolateChip.ClickAmount);
         public override void SetDefaults()
         {

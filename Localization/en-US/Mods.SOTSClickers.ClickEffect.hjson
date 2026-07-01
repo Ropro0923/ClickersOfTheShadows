@@ -7,3 +7,8 @@ VesperaEffect: {
 	Name: Rock Throw
 	Description: Throws {0} chunks of rock
 }
+
+VibrantEffect: {
+	Description: Summons a pulsating vibrant ring that damages enemies
+	Name: Vibrant Ring
+}

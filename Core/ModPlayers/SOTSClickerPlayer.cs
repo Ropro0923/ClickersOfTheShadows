@@ -1,7 +1,6 @@
 using ClickerClass;
 using ClickerClass.Core.Netcode.Packets;
 using ClickerClass.Items.Accessories;
-using ClickerClass.Projectiles;
 using Microsoft.Xna.Framework;
 using SOTS.Void;
 using SOTSClickers.Content.Buffs;

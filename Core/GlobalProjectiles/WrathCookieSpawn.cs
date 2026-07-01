@@ -12,7 +12,7 @@ namespace SOTSClickers.Core.GlobalProjectiles
     public class WrathCookie : GlobalProjectile
     {
         public override bool AppliesToEntity(Projectile entity, bool lateInstantiation) => entity.type == ModContent.ProjectileType<CookiePro>();
-        const int WRATHPERCENT = 75;
+        const float WRATHPERCENT = 75;
         public override void OnSpawn(Projectile projectile, IEntitySource source)
         {
             Player owner = Main.player[projectile.owner];

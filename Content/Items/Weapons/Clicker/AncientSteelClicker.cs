@@ -12,19 +12,15 @@ namespace SOTSClickers.Content.Items.Weapons.Clicker
 {
     public class AncientSteelClicker : SOTSClicker
     {
-        public override float RadiusWidth => 1.7f;
+        public override float RadiusWidth => 1f;
         public override Color RadiusColor => new(108, 115, 140);
         public override int DustType => DustID.Silver;
-
         public override List<string>? Effects => ["SOTSClickers:AncientSteelEffect"];
-
         public override void SafeSetDefaults()
         {
-            Item.damage = 5;
-            Item.width = 30;
-            Item.height = 30;
-            Item.knockBack = 0.5f;
-            //    Item.value = Item.sellPrice(0, 0, 18, 0);
+            Item.damage = 1;
+            Item.width = 16;
+            Item.height = 22;
             Item.rare = ItemRarityID.Blue;
         }
         public override void CreateEffects()

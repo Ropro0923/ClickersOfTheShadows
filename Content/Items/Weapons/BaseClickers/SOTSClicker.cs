@@ -12,7 +12,6 @@ namespace SOTSClickers.Content.Items.Weapons.Clicker
         public abstract Color RadiusColor { get; }
         public abstract int DustType { get; }
         public virtual List<string>? Effects { get; } = [];
-
         public virtual void SafeSetStaticDefaults() { }
         public sealed override void SetStaticDefaults()
         {
@@ -28,7 +27,6 @@ namespace SOTSClickers.Content.Items.Weapons.Clicker
             SetColor(Item, RadiusColor);
             SetDust(Item, DustType);
             Effects?.ForEach(effect => AddEffect(Item, effect));
-
             SafeSetDefaults();
         }
         public virtual void CreateEffects() { }

@@ -14,21 +14,16 @@ namespace SOTSClickers.Content.Items.Weapons.VoidClicker
 
     public class VesperaClicker : SOTSVoidClicker
     {
-        public override float RadiusWidth => 1.7f;
+        public override float RadiusWidth => 1f;
         public override Color RadiusColor => new(79, 98, 113);
         public override int DustType => ModContent.DustType<CopyDust4>();
-
         public override List<string>? Effects => ["SOTSClickers:VesperaEffect"];
-
         public override int GetVoid(Player player) => 10;
-
         public override void VoidSetDefaults()
         {
-            Item.damage = 5;
-            Item.width = 30;
-            Item.height = 30;
-            Item.knockBack = 0.5f;
-            //    Item.value = Item.sellPrice(0, 0, 18, 0);
+            Item.damage = 1;
+            Item.width = 16;
+            Item.height = 22;
             Item.rare = ItemRarityID.Blue;
         }
         public const int ROCK_COUNT = 3;
